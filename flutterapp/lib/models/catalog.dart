@@ -1,5 +1,18 @@
+class CatalogModel {
+  static final items = [
+    Item(
+        id: 1,
+        name: "IPhone 12 Pro",
+        desc: "Apple Iphone",
+        price: 999,
+        color: "#33505a",
+        image:
+            "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone12pro-stainless-steel-gold_10132020_inline.jpg.large.jpg")
+  ];
+}
+
 class Item {
-  final String id;
+  final int id;
   final String name;
   final String desc;
   final num price;
@@ -8,14 +21,3 @@ class Item {
 
   Item({this.id, this.name, this.desc, this.price, this.color, this.image});
 }
-
-final products = [
-  Item(
-      id: "Codepur001",
-      name: "IPhone 12 Pro",
-      desc: "Apple Iphone",
-      price: 999,
-      color: "#33505a",
-      image:
-          "https://specials-images.forbesimg.com/imageserve/5f88d723cc1266cfe615c9d3/960x0.jpg?fit=scale")
-];
