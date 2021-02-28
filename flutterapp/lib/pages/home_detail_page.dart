@@ -13,7 +13,7 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(backgroundColor: Colors.transparent),
       backgroundColor: MyTheme.creamColor,
       bottomNavigationBar: Container(
         color: Colors.white,
@@ -49,16 +49,19 @@ class HomeDetailPage extends StatelessWidget {
               child: Container(
                 color: Colors.white,
                 width: context.screenWidth,
-                child: Column(
-                  children: [
-                    catalog.name.text.xl4
-                        .color(MyTheme.darkBluishColor)
-                        .bold
-                        .make(),
-                    catalog.desc.text.textStyle(context.captionStyle).xl.make(),
-                    10.heightBox,
-                  ],
-                ).py64(),
+                child: Column(children: [
+                  catalog.name.text.xl4
+                      .color(MyTheme.darkBluishColor)
+                      .bold
+                      .make(),
+                  catalog.desc.text.textStyle(context.captionStyle).xl.make(),
+                  10.heightBox,
+                  "Hi this is Abhishek, I a  sasfjdgfka sanjkfndhfa afkcsbhfc kans h asa j ka , s aana j san auhbau ls fsbf dxkf knjan  snk sknkfnsndfks hgafa saf oansakfn iasi faigs svkj gdviaiiafbsbia"
+                      .text
+                      .textStyle(context.captionStyle)
+                      .make()
+                      .p16()
+                ]).py64(),
               ),
             ))
           ],
