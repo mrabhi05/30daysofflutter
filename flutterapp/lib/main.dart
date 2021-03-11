@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/core/store.dart';
 import 'package:flutterapp/pages/cart_page.dart';
 import 'package:flutterapp/pages/login_page.dart';
 import 'package:flutterapp/pages/home_page.dart';
 import 'package:flutterapp/utils/routes.dart';
 import 'package:flutterapp/widgets/themes.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(VxState(store: MyStore(), child: MyApp()));
 }
-
-
 
 class MyApp extends StatelessWidget {
   @override

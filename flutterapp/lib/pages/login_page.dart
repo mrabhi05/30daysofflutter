@@ -1,8 +1,5 @@
-//import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutterapp/utils/routes.dart';
-import 'package:flutterapp/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class LoginPage extends StatefulWidget {

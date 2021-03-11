@@ -1,10 +1,4 @@
 class CatalogModel {
-  static final catModel = CatalogModel._iternal();
-
-  CatalogModel._iternal();
-
-  factory CatalogModel() => catModel;
-
   static List<Item> items;
 
   // Get Item by ID
