@@ -12,7 +12,7 @@ class CartPage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          _CartList ().p32().expand(),
+          _CartList().p32().expand(),
           Divider(),
           _CartTotal(),
         ],
@@ -29,13 +29,17 @@ class _CartTotal extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          "\$9999".text.xl6.color(context.theme.accentColor).make(),
+          "\$999".text.xl6.color(context.theme.accentColor).make(),
           30.widthBox,
           ElevatedButton(
+            onPressed: () {
+              Scaffold.of(context).showSnackBar(SnackBar(
+                content: "Buying not supported yet".text.make(),
+              ));
+            },
             style: ButtonStyle(
                 backgroundColor:
                     MaterialStateProperty.all(context.theme.buttonColor)),
-            onPressed: () {},
             child: "Buy".text.white.make(),
           ).w32(context)
         ],

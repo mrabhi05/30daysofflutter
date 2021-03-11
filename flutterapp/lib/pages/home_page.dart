@@ -5,7 +5,6 @@ import 'package:flutterapp/models/catalog.dart';
 import 'package:flutterapp/utils/routes.dart';
 import 'package:flutterapp/widgets/home_widgets/catalog_headers.dart';
 import 'package:flutterapp/widgets/home_widgets/catalog_list.dart';
-import 'package:flutterapp/widgets/themes.dart';
 import 'dart:convert';
 import 'package:velocity_x/velocity_x.dart';
 
